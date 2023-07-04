@@ -60,42 +60,83 @@ body {
      font-family: Verdana, sans-serif;
 }
 
+
+/* MAIN with media queries -------------------------------- */
+
 main {
      display: grid;
-     grid-template-columns: 2fr 3fr;
+     grid-template-rows: 2fr 3fr;
      background-color: white;
      max-width: 70ch;
      border-radius: 1rem;
-     margin: 2rem auto;
      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
      padding: 0;
-     margin: 2rem auto;
+     margin: 2rem;
+}
+
+@media (min-width: 1024px) {
+
+     main {
+          display: grid;
+          grid-template-columns: 2fr 3fr;
+          max-width: 70ch;
+          margin: 2rem auto;
+          padding: 0;
+     }
 }
 
 /* ARTICLE ----------------------------------------------------------  */
 
+
 article {
-     margin: 2rem;
+     margin: 2rem 1.5rem 1rem;
 }
+
 
 .article-image {
      background-image: url("./images/drawers.jpg");
      background-size: cover;
      background-repeat: no-repeat;
-     border-radius: 1rem 0 0 1rem;
+     border-radius: 1rem 1rem 0 0;
 }
 
+@media (min-width: 1024px) {
+     .article-image {
+          border-radius: 1rem 0 0 1rem;
+     }
+
+     article {
+          margin: 2rem;
+     }
+
+}
+
+
+
 article h1 {
-     font-size: 1.3rem;
+     font-size: 1rem;
      font-weight: 700;
      color: var(--DarkGrayishBlue);
      margin-bottom: 1rem;
 }
 
+
+@media (min-width: 1024px) {
+     article {
+          margin: 1rem;
+     }
+
+     article h1 {
+          font-size: 1.3rem;
+     }
+
+}
+
+
 article p {
      font-size: .75rem;
      line-height: 1.8;
-     color: var(--DarkGrayishBlue);
+     color: var(--DesatDarkBlue);
 }
 
 
