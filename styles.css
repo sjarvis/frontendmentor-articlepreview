@@ -215,9 +215,9 @@ article .share-popup span.share-label {
           height: 3rem;
           width: 15rem;
           display: inline-flex;
+          transition: all 0.5s ease;
           justify-content: space-around;
           border-radius: .5rem;
-
      }
 
      article .share-popup #share-button {
@@ -236,6 +236,8 @@ article .share-popup span.share-label {
           border-bottom: 0;
           margin-left: -20px;
           margin-bottom: -20px;
+
+
      }
 
 }
