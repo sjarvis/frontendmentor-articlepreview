@@ -42,7 +42,7 @@
 						<p class="dateline">28 Jun 2020</p>
 					</div>
 
-					<span class="fa-stack fa-1x">
+					<span class="fa-stack fa-1x" onclick="myFunction()">
 						<i
 							class="fa-solid fa-circle fa-stack-2x"
 							style="color: var(--LtGrayishBlue)"
@@ -54,7 +54,40 @@
 					</span>
 				</div>
 				<!-- article-metadata -->
+
+				<div class="share-popup flex-group" id="sharepop">
+					<span class="share-label">share</span>
+					<i class="fa-brands fa-square-facebook"></i>
+					<i class="fa-brands fa-twitter"></i>
+					<i class="fa-brands fa-pinterest"></i>
+					<span
+						id="share-button"
+						class="fa-stack fa-1x"
+						onclick="myFunction()"
+					>
+						<i
+							class="fa-solid fa-circle fa-stack-2x"
+							style="color: var(--LtGrayishBlue)"
+						></i>
+						<i
+							class="fa-solid fa-share fa-stack-1x"
+							style="color: var(--DarkGrayishBlue)"
+						></i>
+					</span>
+				</div>
+				<!-- share-popup-->
 			</article>
 		</main>
 	</body>
+
+	<script>
+		function myFunction() {
+			var x = document.getElementById("sharepop");
+			if (x.style.display === "none") {
+				x.style.display = "inline-flex";
+			} else {
+				x.style.display = "none";
+			}
+		}
+	</script>
 </html>
